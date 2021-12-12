@@ -6,7 +6,7 @@ resource "google_container_cluster" "primary" {
   name               = "marcellus-wallace"
   location           = "us-central1-a"
   initial_node_count = 3
-  datapath_provider = "ABC"
+  datapath_provider = "LEGACY_DATAPATH"
 
   ip_allocation_policy {
 
