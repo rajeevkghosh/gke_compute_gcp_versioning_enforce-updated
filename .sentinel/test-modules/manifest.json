@@ -1,19 +1,19 @@
 {
 	"records": [
 		{
-			"key": "test/gke-policy/gke-dataplane-pass/tfplan-functions",
+			"key": "test/gke-policy/gke-release-channel-null/tfplan-functions",
 			"source": "../../tfplan-functions.sentinel",
 			"sourceSum": "",
 			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
 		},
 		{
-			"key": "test/gke-policy/gke-masterauth-fail/tfplan-functions",
+			"key": "test/gke-policy/gke-masterauth-null/tfplan-functions",
 			"source": "../../tfplan-functions.sentinel",
 			"sourceSum": "",
 			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
 		},
 		{
-			"key": "test/gke-policy/gke-masterauth-pass/tfplan-functions",
+			"key": "test/gke-policy/gke-release-channel-pass/tfplan-functions",
 			"source": "../../tfplan-functions.sentinel",
 			"sourceSum": "",
 			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
@@ -25,13 +25,31 @@
 			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
 		},
 		{
-			"key": "test/gke-policy/gke-release-channel-fail/tfplan-functions",
+			"key": "test/gke-policy/gke-dataplane-pass/tfplan-functions",
 			"source": "../../tfplan-functions.sentinel",
 			"sourceSum": "",
 			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
 		},
 		{
-			"key": "test/gke-policy/gke-release-channel-pass/tfplan-functions",
+			"key": "test/gke-policy/gke-dataplane-null/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/gke-policy/gke-masterauth-pass/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/gke-policy/gke-masterauth-fail/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/gke-policy/gke-release-channel-fail/tfplan-functions",
 			"source": "../../tfplan-functions.sentinel",
 			"sourceSum": "",
 			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
