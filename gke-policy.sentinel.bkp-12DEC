@@ -1,0 +1,44 @@
+#This policy uses the Sentinel tfplan/v2 import to require that
+# all GCE compute instances have all mandatory labels
+
+# Note that the comparison is case-sensitive but also that GCE labels are only
+# allowed to contain lowercase letters, numbers, hypens, and underscores.
+
+# Import tfplan-functions.sentinel
+# with alias "plan"
+import "tfplan/v2" as tfplan
+import "tfplan-functions" as plan
+import "strings"
+import "types"
+
+
+# Get all SQL Database Instance
+allGkeInstances = plan.find_resources("google_container_cluster")
+
+violations = {}
+for allGkeInstances as address, rc {
+
+    #release_channel = plan.evaluate_attribute(rc.change.after.release_channel[0],"channel")
+    release_channel = plan.evaluate_attribute(rc.change.after,"release_channel")
+   # print(release_channel[0]["channel"])
+   print(release_channel)
+
+
+    isnull_release_channel = rule {types.type_of(release_channel) == "null" or types.type_of(release_channel) == "undefined"}
+    print(isnull_release_channel)
+    if isnull_release_channel {
+        print("release_channel can't be null" )
+        violations[address] = rc
+
+    } /*else if not (release_channel[0]["channel"] == "STABLE") {
+        print( "Only STABLE option is permissible for Release Channel")
+        violations[address] = rc
+
+    }*/
+}
+
+
+
+
+GCP_GKE_RELEASECHANNEL= rule { length(violations) is 0 }
+main = rule {GCP_GKE_RELEASECHANNEL}
