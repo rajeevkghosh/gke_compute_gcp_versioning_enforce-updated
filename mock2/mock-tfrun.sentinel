@@ -1,0 +1,37 @@
+id = "run-dmvvFTMnfxuxiijR"
+created_at = "2021-12-12T08:37:02.230Z"
+message = "Triggered via UI"
+commit_sha = "0735a6f3e88880718f5d8eecdb2fd1a5b106cc54"
+speculative = false
+is_destroy = false
+refresh = true
+refresh_only = false
+replace_addrs = null
+target_addrs = null
+
+variables = {
+	"GOOGLE_CREDENTIALS": {
+		"category":  "env",
+		"sensitive": true,
+	},
+}
+
+organization = {
+	"name": "ashwinkumarnaik91",
+}
+
+workspace = {
+	"auto_apply":  false,
+	"created_at":  "2021-12-10T14:34:09.819Z",
+	"description": null,
+	"id":          "ws-EzEpDmmPpQJhG48L",
+	"name":        "Rajeev-gke-cluster-policy",
+	"tags":        [],
+	"vcs_repo": {
+		"branch":             "",
+		"display_identifier": "rajeevkghosh/gke-cluster-policy",
+		"identifier":         "rajeevkghosh/gke-cluster-policy",
+		"ingress_submodules": false,
+	},
+	"working_directory": "",
+}

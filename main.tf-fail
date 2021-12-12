@@ -6,14 +6,14 @@ resource "google_container_cluster" "primary" {
   name               = "marcellus-wallace"
   location           = "us-central1-a"
   initial_node_count = 3
-  #datapath_provider = "LEGACY_DATAPATH"
+  datapath_provider = "LEGACY_DATAPATH"
 
   ip_allocation_policy {
 
   }
-  /*release_channel {
+  release_channel {
   channel = "REGULAR"
-  }*/
+  }
   /*master_authorized_networks_config {
       cidr_blocks {
           cidr_block = "192.168.10.35/32"
