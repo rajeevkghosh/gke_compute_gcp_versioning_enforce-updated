@@ -25,13 +25,15 @@ for allGkeInstances as address, rc {
 	isnull_release_channel = rule { types.type_of(release_channel) == "null" }
 	print(isnull_release_channel)
 	if isnull_release_channel {
-		print("release_channel can't be null")
+		#print("release_channel can't be null")
+        print("The value for  " + address + " Can't be Null ")
 		violations_release_channel[address] = rc
 
 	} else {
 
 		if not (release_channel[0]["channel"] == "STABLE") {
-			print("Only STABLE option is permissible for Release Channel")
+			#print("Only STABLE option is permissible for Release Channel")
+            print("The value for  " + address + " can only be STABLE")
 			violations_release_channel[address] = rc
 
 		}
@@ -52,7 +54,8 @@ for allGkeInstances as address, rc {
 
 	if isnull_dataplane {
 		violations_dataplane[address] = rc
-		print("Dataplane value can't be Null")
+		#print("Dataplane value can't be Null")
+        print("The value for  " + address + " Can't be Null ")
 
 	} else {
 
