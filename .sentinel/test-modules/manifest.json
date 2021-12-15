@@ -1,40 +1,16 @@
 {
 	"records": [
 		{
-			"key": "test/gke-policy/gke-release-channel-null/tfplan-functions",
+			"key": "test/compute_gcp_gke_notify/gke-masterauth-fail/tfplan-functions",
 			"source": "../../tfplan-functions.sentinel",
 			"sourceSum": "",
-			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
+			"dest": "/home/rajeevghosh/wells-15DEC/gke-cluster-policy/tfplan-functions.sentinel"
 		},
 		{
-			"key": "test/gke-policy/gke-masterauth-null/tfplan-functions",
+			"key": "test/compute_gcp_versioning_enforce/gke-dataplane-null/tfplan-functions",
 			"source": "../../tfplan-functions.sentinel",
 			"sourceSum": "",
-			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
-		},
-		{
-			"key": "test/gke-policy/gke-release-channel-pass/tfplan-functions",
-			"source": "../../tfplan-functions.sentinel",
-			"sourceSum": "",
-			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
-		},
-		{
-			"key": "test/gke-policy/gke-dataplane-fail/tfplan-functions",
-			"source": "../../tfplan-functions.sentinel",
-			"sourceSum": "",
-			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
-		},
-		{
-			"key": "test/gke-policy/gke-dataplane-pass/tfplan-functions",
-			"source": "../../tfplan-functions.sentinel",
-			"sourceSum": "",
-			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
-		},
-		{
-			"key": "test/gke-policy/gke-dataplane-null/tfplan-functions",
-			"source": "../../tfplan-functions.sentinel",
-			"sourceSum": "",
-			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
+			"dest": "/home/rajeevghosh/wells-15DEC/gke-cluster-policy/tfplan-functions.sentinel"
 		},
 		{
 			"key": "test/gke-policy/gke-masterauth-pass/tfplan-functions",
@@ -49,10 +25,88 @@
 			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
 		},
 		{
+			"key": "test/gke-policy/gke-dataplane-null/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/compute_gcp_versioning_enforce/gke-release-channel-fail/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-15DEC/gke-cluster-policy/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/compute_gcp_versioning_enforce/gke-release-channel-null/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-15DEC/gke-cluster-policy/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/gke-policy/gke-dataplane-fail/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/gke-policy/gke-dataplane-pass/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/compute_gcp_gke_notify/gke-masterauth-null/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-15DEC/gke-cluster-policy/tfplan-functions.sentinel"
+		},
+		{
 			"key": "test/gke-policy/gke-release-channel-fail/tfplan-functions",
 			"source": "../../tfplan-functions.sentinel",
 			"sourceSum": "",
 			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/gke-policy/gke-release-channel-pass/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/compute_gcp_versioning_enforce/gke-release-channel-pass/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-15DEC/gke-cluster-policy/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/gke-policy/gke-masterauth-null/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/compute_gcp_versioning_enforce/gke-dataplane-fail/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-15DEC/gke-cluster-policy/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/gke-policy/gke-release-channel-null/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-10DEC/gke-cluster-policy/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/compute_gcp_gke_notify/gke-masterauth-pass/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-15DEC/gke-cluster-policy/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/compute_gcp_versioning_enforce/gke-dataplane-pass/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-15DEC/gke-cluster-policy/tfplan-functions.sentinel"
 		}
 	]
 }
