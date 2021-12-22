@@ -31,7 +31,7 @@ resource "google_container_cluster" "primary" {
       application_role     = "app",
       au                   = "0223092",
       created              = "20211122",
-      environment          = "nonprod",
+      environment          = "prod",
       gcp_region           = "us",
       owner                = "hybridenv",
     }
