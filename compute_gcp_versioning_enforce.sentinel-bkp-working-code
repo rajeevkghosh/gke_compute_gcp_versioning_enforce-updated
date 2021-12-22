@@ -17,25 +17,33 @@ allGkeInstances = plan.find_resources("google_container_cluster")
 violations_release_channel = {}
 for allGkeInstances as address, rc {
 
+	#release_channel = plan.evaluate_attribute(rc.change.after.release_channel[0],"channel")
 	envr = plan.evaluate_attribute(rc.change.after, "node_config.0.labels.environment")
+	print(envr)
 	is_env_undefined = rule { types.type_of(envr) == "null" or types.type_of(envr) == "undefined" }
+	print(types.type_of(envr))
+	print(is_env_undefined)
 	if (is_env_undefined == false and envr == "prod") {
 		release_channel = plan.evaluate_attribute(rc.change.after, "release_channel")
+		# print(release_channel[0]["channel"])
+		print(release_channel)
+
 		isnull_release_channel = rule { types.type_of(release_channel) == "null" }
+		print(isnull_release_channel)
 		if isnull_release_channel {
-			print("The value for Release Channel for  " + address + " Can't be Null ")
+			#print("release_channel can't be null")
+			print("The value for  " + address + " Can't be Null ")
 			violations_release_channel[address] = rc
 
 		} else {
 
 			if not (release_channel[0]["channel"] == "STABLE") {
-				print("The value for Release Channel for   " + address + " can only be STABLE")
+				#print("Only STABLE option is permissible for Release Channel")
+				print("The value for  " + address + " can only be STABLE")
 				violations_release_channel[address] = rc
 
 			}
 		}
-	} else {
-		print ( "The value for environment is other than PROD, hence Release Channel won't be checked" )
 	}
 }
 
@@ -49,6 +57,7 @@ for allGkeInstances as address, rc {
 
 	dataplane = plan.evaluate_attribute(rc.change.after, "datapath_provider")
 	isnull_dataplane = rule { types.type_of(dataplane) == "null" }
+	print("Dataplane: " + plan.to_string(isnull_dataplane))
 
 	if isnull_dataplane {
 		violations_dataplane[address] = rc

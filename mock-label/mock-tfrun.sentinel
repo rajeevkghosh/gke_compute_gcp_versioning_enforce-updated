@@ -1,0 +1,43 @@
+id = "run-kqPQ7jAYKbGw2Kvi"
+created_at = "2021-12-22T14:42:48.778Z"
+message = "Triggered via UI"
+commit_sha = "3e4948b4cca41a0e2c124f7c74d32bad2f755dc5"
+speculative = false
+is_destroy = false
+refresh = true
+refresh_only = false
+replace_addrs = null
+target_addrs = null
+
+variables = {
+	"GOOGLE_CREDENTIALS": {
+		"category":  "env",
+		"sensitive": true,
+	},
+}
+
+organization = {
+	"name": "Ashwin-21",
+}
+
+workspace = {
+	"auto_apply":  false,
+	"created_at":  "2021-12-22T14:40:26.400Z",
+	"description": null,
+	"id":          "ws-zh8TWg2CqavPmX94",
+	"name":        "Rajeev-gke_compute_gcp_versioning_enforce-updated",
+	"tags":        [],
+	"vcs_repo": {
+		"branch":             "",
+		"display_identifier": "rajeevkghosh/gke_compute_gcp_versioning_enforce-updated",
+		"identifier":         "rajeevkghosh/gke_compute_gcp_versioning_enforce-updated",
+		"ingress_submodules": false,
+	},
+	"working_directory": "",
+}
+
+cost_estimate = {
+	"delta_monthly_cost":    "0.0",
+	"prior_monthly_cost":    "0.0",
+	"proposed_monthly_cost": "0.0",
+}

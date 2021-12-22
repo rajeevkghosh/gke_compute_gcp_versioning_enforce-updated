@@ -1,4 +1,4 @@
-terraform_version = "1.1.2"
+terraform_version = "1.1.0"
 
 planned_values = {
 	"outputs": {},
@@ -40,20 +40,13 @@ planned_values = {
 					},
 				],
 				"min_master_version": null,
-				"name":               "wf-us-prod-gke-app01-cluster1",
+				"name":               "marcellus-wallace",
 				"network":            "default",
 				"node_config": [
 					{
 						"gcfs_config": [],
 						"labels": {
-							"application_division": "pci",
-							"application_name":     "demo",
-							"application_role":     "app",
-							"au":                   "0223092",
-							"created":              "20211122",
-							"environment":          "prod",
-							"gcp_region":           "us",
-							"owner":                "hybridenv",
+							"foo": "bar",
 						},
 						"min_cpu_platform": null,
 						"node_group":       null,
@@ -123,20 +116,13 @@ resource_changes = {
 					},
 				],
 				"min_master_version": null,
-				"name":               "wf-us-prod-gke-app01-cluster1",
+				"name":               "marcellus-wallace",
 				"network":            "default",
 				"node_config": [
 					{
 						"gcfs_config": [],
 						"labels": {
-							"application_division": "pci",
-							"application_name":     "demo",
-							"application_role":     "app",
-							"au":                   "0223092",
-							"created":              "20211122",
-							"environment":          "nonprod",
-							"gcp_region":           "us",
-							"owner":                "hybridenv",
+							"foo": "bar",
 						},
 						"min_cpu_platform": null,
 						"node_group":       null,
@@ -302,20 +288,13 @@ raw = {
 							},
 						],
 						"name": {
-							"constant_value": "wf-us-prod-gke-app01-cluster1",
+							"constant_value": "marcellus-wallace",
 						},
 						"node_config": [
 							{
 								"labels": {
 									"constant_value": {
-										"application_division": "pci",
-										"application_name":     "demo",
-										"application_role":     "app",
-										"au":                   "0223092",
-										"created":              "20211122",
-										"environment":          "prod",
-										"gcp_region":           "us",
-										"owner":                "hybridenv",
+										"foo": "bar",
 									},
 								},
 								"oauth_scopes": {
@@ -437,20 +416,13 @@ raw = {
 							},
 						],
 						"min_master_version": null,
-						"name":               "wf-us-prod-gke-app01-cluster1",
+						"name":               "marcellus-wallace",
 						"network":            "default",
 						"node_config": [
 							{
 								"gcfs_config": [],
 								"labels": {
-									"application_division": "pci",
-									"application_name":     "demo",
-									"application_role":     "app",
-									"au":                   "0223092",
-									"created":              "20211122",
-									"environment":          "prod",
-									"gcp_region":           "us",
-									"owner":                "hybridenv",
+									"foo": "bar",
 								},
 								"min_cpu_platform": null,
 								"node_group":       null,
@@ -518,20 +490,13 @@ raw = {
 						},
 					],
 					"min_master_version": null,
-					"name":               "wf-us-prod-gke-app01-cluster1",
+					"name":               "marcellus-wallace",
 					"network":            "default",
 					"node_config": [
 						{
 							"gcfs_config": [],
 							"labels": {
-								"application_division": "pci",
-								"application_name":     "demo",
-								"application_role":     "app",
-								"au":                   "0223092",
-								"created":              "20211122",
-								"environment":          "prod",
-								"gcp_region":           "us",
-								"owner":                "hybridenv",
+								"foo": "bar",
 							},
 							"min_cpu_platform": null,
 							"node_group":       null,
@@ -702,5 +667,5 @@ raw = {
 			"type":          "google_container_cluster",
 		},
 	],
-	"terraform_version": "1.1.2",
+	"terraform_version": "1.1.0",
 }
