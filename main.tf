@@ -3,22 +3,22 @@ provider "google" {
     #credentials = file("../gke.json")
 }
 resource "google_container_cluster" "primary" {
-  name               = "marcellus-wallace"
+  name               = "wf-us-prod-gke-app01-cluster1"
   location           = "us-central1-a"
   initial_node_count = 3
-  #datapath_provider = "LEGACY_DATAPATH"
+  datapath_provider = "ADVANCED_DATAPATH"
 
   ip_allocation_policy {
 
   }
-  /*release_channel {
-  channel = "REGULAR"
-  }*/
-  /*master_authorized_networks_config {
+  release_channel {
+  channel = "STABLE"
+  }
+  master_authorized_networks_config {
       cidr_blocks {
           cidr_block = "192.168.10.35/32"
       }
-  }*/
+  }
   node_config {
     # Google recommends custom service accounts that have cloud-platform scope and permissions granted via IAM Roles.
     #service_account = google_service_account.default.email
@@ -26,7 +26,14 @@ resource "google_container_cluster" "primary" {
       "https://www.googleapis.com/auth/cloud-platform"
     ]
     labels = {
-      foo = "bar"
+      application_division = "pci",
+      application_name     = "demo",
+      application_role     = "app",
+      au                   = "0223092",
+      created              = "20211122",
+      environment          = "nonprod",
+      gcp_region           = "us",
+      owner                = "hybridenv",
     }
     tags = ["foo", "bar"]
   }
